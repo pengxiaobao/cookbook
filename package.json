@@ -1,0 +1,47 @@
+{
+  "name": "anima-boilerplate",
+  "version": "1.0.0",
+  "description": "a standard project",
+  "boilerplateVersion": "1.0.0",
+  "scripts": {
+    "start": "set NODE_ENV=development && dora -p 8001 --plugins webpack",
+    "mock": "set NODE_ENV=mock && dora -p 8001 --plugins webpack",
+    "test": "atool-test",
+    "lint": "eslint test src",
+    "simulator": "dora -p 8001 --plugins 'webpack,livereload,config-manager?path=./mobile.config.js|simOpts,simulator'",
+    "build": "atool-build"
+  },
+  "keywords": [
+    "standard"
+  ],
+  "author": "anima",
+  "entry": {
+    "index": "./src/index/index.js",
+    "detail": "./src/detail/detail.js",
+    "hello": "./src/hello/hello.js"
+  },
+  "dependencies": {
+    "anima-countdown": "^2.0.0",
+    "anima-hd": "*",
+    "anima-querystring": "~1.0.0",
+    "anima-template": "~1.0.12",
+    "anima-yocto-lite": "^1.1.2",
+    "antd-mobile": "^0.9.6",
+    "antd-mobile-h5": "^0.0.2",
+    "atpl-loader": "~0.2.0"
+  },
+  "devDependencies": {
+    "atool-build": "^0.7.1",
+    "atool-test": "^0.4.11",
+    "babel-eslint": "~6.0.0",
+    "dora": "^0.3.2",
+    "dora-plugin-config-manager": "~0.2.3",
+    "dora-plugin-livereload": "0.3.x",
+    "dora-plugin-simulator": "~0.1.2",
+    "dora-plugin-webpack": "0.5.x",
+    "ejs-html-loader": "~1.2.2",
+    "eslint": "2.x",
+    "eslint-config-anima": "^1.0.2",
+    "eslint-config-egg": "^2.0.0"
+  }
+}

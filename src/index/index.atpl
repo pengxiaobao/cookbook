@@ -1,0 +1,29 @@
+<h5 class="title">这是一个antui的简单列表展示</h5>
+<div class="am-list" am-mode="flat chip 43px">
+  <div class="am-list-header">单行列表</div>
+  <div class="am-list-body">
+    <div class="am-list-item">
+      <div class="am-list-content"><%=data.name%></div>
+      <div class="am-list-extra">atpl输出变量</div>
+    </div>
+  </div>
+</div>
+<div class="am-list" am-mode="flat chip 43px">
+  <div class="am-list-body">
+    <a href="/detail.html" class="am-list-item">
+      <div class="am-list-content"><%=data.name%></div>
+      <div class="am-list-extra">访问详情</div>
+      <div class="am-list-arrow"><span class="am-icon" am-mode="arrow-horizontal"></span></div>
+    </a>
+  </div>
+  <div class="am-list-footer">文本说明文本说明</div>
+</div>
+
+<div class="am-flexbox am-wingblank" am-mode="10px average">
+  <div class="am-flexbox-item">
+    <button type="button" class="am-button" am-mode="white 43px">次按钮</button>
+  </div>
+  <div class="am-flexbox-item">
+    <button type="button" class="am-button" am-mode="blue 43px">主按钮</button>
+  </div>
+</div>
